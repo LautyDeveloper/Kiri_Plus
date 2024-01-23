@@ -1,2 +1,44 @@
 @use 'mixins';
 @use 'normalize';
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+$azulPrincipal: #001f3f;
+$amarilloDestacado: #f39c12;
+$verdeSuaveParaAcentos:#6ab04c;
+$naranjaParaAcentosAlternativos:#e67e22;
+$azulClaroParaContraste:#3498db;
+$blanco:#ffffff;
+$font-title: 'Bebas Neue', sans-serif;
+$font-p: 'Lato', sans-serif;
+
+body{
+    background-color: $azulPrincipal;
+    @include mixins.crearFlex(column, center, center, center, inherit);
+    header{
+        @include mixins.crearFlex(column, center, flex-start, center, inherit);
+        @include mixins.crearBackground("../media/banner.png");
+        width: 85%;
+        height: 225px;
+        margin-top: 40px;
+        border-radius: 20px;
+        color: $blanco;
+        .overlay{
+            @include mixins.crearFlex(column, space-between, flex-start, center, inherit);
+            margin-left: 40px;
+            height: 40%;
+            h1{
+                font-size: 3rem;
+                font-family: $font-title;
+                letter-spacing: 3px;
+                font-weight: 700;
+            }
+            p{
+                font-size: 1.5rem;
+                font-family: $font-p;
+                letter-spacing: 1px;
+                color: $azulClaroParaContraste;
+            }
+        }
+    }
+}   

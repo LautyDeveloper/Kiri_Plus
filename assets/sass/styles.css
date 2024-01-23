@@ -1,5 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: #001f3f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: inherit;
+}
+body header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  flex-wrap: inherit;
+  background-image: linear-gradient(rgba(89, 89, 89, 0.3), rgba(34, 34, 34, 0.5)), url("../media/banner.png");
+  background-position: center center;
+  background-size: cover;
+  width: 85%;
+  height: 225px;
+  margin-top: 40px;
+  border-radius: 20px;
+  color: #ffffff;
+}
+body header .overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+  flex-wrap: inherit;
+  margin-left: 40px;
+  height: 40%;
+}
+body header .overlay h1 {
+  font-size: 3rem;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+body header .overlay p {
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  color: #3498db;
 }/*# sourceMappingURL=styles.css.map */

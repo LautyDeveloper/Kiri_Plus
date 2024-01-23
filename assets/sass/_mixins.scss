@@ -6,3 +6,12 @@
     text-align: $text;
     flex-wrap: $wrap;
 }
+
+@mixin crearBackground ($url){
+    background-image: linear-gradient(
+        rgba(89, 89, 89, 0.3),
+        rgb(34, 34, 34, 0.5)
+    ),url($url);
+    background-position:center center;
+    background-size: cover;
+}
